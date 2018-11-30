@@ -81,11 +81,11 @@ if __name__ == "__main__":
     #os.environ["webdriver.ie.driver"] = iedriver  #调用IE浏览器
     
     browser = webdriver.Ie(chormedriver)
-    browser.get('http://172.17.18.114:8080/2345explorer/login')  #需要打开的网址
+    browser.get('http://www.fhfafjoa.com')  #需要打开的网址
     user = browser.find_element_by_id("username") #审查元素username的id
-    user.send_keys("wanggh")  #输入账号
+    user.send_keys("xxxxx")  #输入账号
     password = browser.find_element_by_name("password") #审查元素password的name
-    password.send_keys("wanggh")  #输入密码
+    password.send_keys("xxxxx")  #输入密码
     password.send_keys(Keys.RETURN) #实现自动点击登陆
     print("登陆成功")
 
